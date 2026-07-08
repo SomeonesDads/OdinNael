@@ -1,0 +1,111 @@
+.main{
+    color: black;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    width : 100vw;
+    height : 100vh;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.left {
+    background-image: url("leaf.jpg");
+    background-size:cover;
+    flex:1;
+    padding-top:20vh;
+}
+
+.right{
+    flex:2;
+    background-color: white;
+}
+
+.textbox{
+    background: rgba(0,0,0,.45);
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    padding:8px;
+}
+
+img{
+    height: 120px;
+    width:auto
+}
+
+h1{
+    color: white;
+    font-size: 70px;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.right{
+    padding-top: 10vh;
+    background-color: #f9fafb;
+}
+
+.disc{
+    padding-left: 2.5vw;
+}
+.disc > p{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.dform{
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    padding: 30px 2.5vw;
+}
+
+h2{
+    margin-top:0;
+}
+
+.form-row{
+    display:flex;
+    flex-direction: row;
+    gap:60px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.submission {
+    padding: 35px 40px;
+}
+
+button {
+    background: #596D48;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 14px 48px;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #4b5d3d;
+}
