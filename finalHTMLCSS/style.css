@@ -1,0 +1,74 @@
+html {
+    font-size: 16px;
+}
+
+body{
+    height: 200vh;
+}
+#o1{
+    background-color: red;
+    height: 10rem;
+    width: 10rem;
+    transform: rotateY;
+}
+
+#o2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    border: 0.05rem solid black;
+    background-color: white;
+    width: 10rem;
+    height: 10rem;
+    transition: all 0.25s ease-in 0s;
+}
+
+button:hover{
+    background-color: gray;
+    color:white;
+}
+
+button:active{
+    background-color:black;
+}
+.red-box,
+.blue-box {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.red-box {
+  background: red;
+  /* transform: rotate(45deg) translate(200%); */
+  animation: 1s rotate infinite linear, 0.5s change-color infinite alternate
+}
+
+@keyframes rotate {
+    from{
+        rotate: 0deg;
+    }
+
+    to{
+        rotate: 360deg
+    }
+}
+
+
+@keyframes change-color {
+    from{
+        background-color: red;
+    }
+    50%{
+        background-color: green;
+    }
+    to{
+        background-color: blue;
+    }
+}
+.blue-box {
+  background: blue;
+  transform: translate(200%) rotate(45deg);
+}
